@@ -18,5 +18,6 @@ namespace RiseTechnology.Entities.Patterns
             builder.UseNpgsql(connectionString);
             return new RiseTechContext(builder.Options);
         }
+
     }
 }
