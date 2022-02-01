@@ -10,10 +10,10 @@ namespace RiseTechnology.DAL.Abstract
 {
     public interface IEntityRepository<T> where T:class
     {
-        Mesajlar<T> Getir(int KulID, Expression<Func<T, bool>> filtre = null);
-        Mesajlar<T> Listele(int KulID, Expression<Func<T, bool>> filtre = null);
-        Mesajlar<T> Ekle(T ent, int KulID);
-        Mesajlar<T> Duzelt(T ent, int KulID);
-        Mesajlar<T> Sil(T ent, int KulID);
+        Mesajlar<T> Getir(Expression<Func<T, bool>> filtre = null);
+        Mesajlar<T> Listele(Expression<Func<T, bool>> filtre = null);
+        Mesajlar<T> Ekle(T ent);
+        Mesajlar<T> Duzelt(T ent);
+        Mesajlar<T> Sil(T ent);
     }
 }

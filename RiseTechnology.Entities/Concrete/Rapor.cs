@@ -10,6 +10,9 @@ namespace RiseTechnology.Entities.Concrete
 {
     public class RAPOR : BaseEntity
     {
+        public string Konum { get; set; }
+        public int KayitliKisiSayisi { get; set; }
+        public int KayitliTelefonNumarasi { get; set; }
         public DateTime RaporTalepTarih { get; set; }
         public RaporDurum RaporDurumBilgi { get; set; }
     }

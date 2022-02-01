@@ -15,7 +15,7 @@ namespace TPIC.Dal.Concrete
         where TEntity : class
         where TContext : DbContext,new()
     {
-        public Mesajlar<TEntity> Duzelt(TEntity ent, int KulID)
+        public Mesajlar<TEntity> Duzelt(TEntity ent)
         {
             Mesajlar<TEntity> m = new Mesajlar<TEntity>();
 
@@ -25,10 +25,7 @@ namespace TPIC.Dal.Concrete
                 if (Is_Tarih != null)
                     Is_Tarih.SetValue(ent, DateTime.Now);
 
-                PropertyInfo Is_KulID = ent.GetType().GetProperty("Du_KullaniciID");
-                if (Is_KulID != null)
-                    Is_KulID.SetValue(ent, KulID);
-
+           
                 PropertyInfo Durum = ent.GetType().GetProperty("Durum");
                 if (Durum != null)
                     Durum.SetValue(ent, true);
@@ -70,7 +67,7 @@ namespace TPIC.Dal.Concrete
             return m;
         }
 
-        public Mesajlar<TEntity> Ekle(TEntity ent, int KulID)
+        public Mesajlar<TEntity> Ekle(TEntity ent)
         {
             Mesajlar<TEntity> m = new Mesajlar<TEntity>();
 
@@ -79,10 +76,6 @@ namespace TPIC.Dal.Concrete
                 PropertyInfo Is_Tarih = ent.GetType().GetProperty("KayitTarih");
                 if (Is_Tarih != null)
                     Is_Tarih.SetValue(ent, DateTime.Now);
-
-                PropertyInfo Is_KulID = ent.GetType().GetProperty("Ka_KullaniciID");
-                if (Is_KulID != null)
-                    Is_KulID.SetValue(ent, KulID);
 
                 PropertyInfo Durum = ent.GetType().GetProperty("Durum");
                 if (Durum != null)
@@ -111,7 +104,7 @@ namespace TPIC.Dal.Concrete
             return m;
         }
        
-        public Mesajlar<TEntity> Getir(int KulID, Expression<Func<TEntity, bool>> filtre = null)
+        public Mesajlar<TEntity> Getir(Expression<Func<TEntity, bool>> filtre = null)
         {
             Mesajlar<TEntity> m = new Mesajlar<TEntity>();
 
@@ -137,7 +130,7 @@ namespace TPIC.Dal.Concrete
             return m;
         }
 
-        public Mesajlar<TEntity> Sil(TEntity ent, int KulID)
+        public Mesajlar<TEntity> Sil(TEntity ent)
         {
             Mesajlar<TEntity> m = new Mesajlar<TEntity>();
 
@@ -146,10 +139,6 @@ namespace TPIC.Dal.Concrete
                 PropertyInfo Is_Tarih = ent.GetType().GetProperty("SilmeTarih");
                 if (Is_Tarih != null)
                     Is_Tarih.SetValue(ent, DateTime.Now);
-
-                PropertyInfo Is_KulID = ent.GetType().GetProperty("Sil_KullaniciID");
-                if (Is_KulID != null)
-                    Is_KulID.SetValue(ent, KulID);
 
                 PropertyInfo Durum = ent.GetType().GetProperty("Durum");
                 if (Durum != null)
@@ -179,7 +168,7 @@ namespace TPIC.Dal.Concrete
             return m;
         }
 
-        public Mesajlar<TEntity> Listele(int KulID, Expression<Func<TEntity, bool>> filtre = null)
+        public Mesajlar<TEntity> Listele(Expression<Func<TEntity, bool>> filtre = null)
         {
             Mesajlar<TEntity> m = new Mesajlar<TEntity>();
 

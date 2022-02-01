@@ -21,7 +21,6 @@ namespace RiseTechnology.Entities.Context
 
         public DbSet<KISI> KISILER{ get; set; }
         public DbSet<KISI_ILETISIM_BILGI> KISI_ILETISIM_BILGILER { get; set; }
-        public DbSet<RAPOR> RAPORLAR{ get; set; }
 
     }
 }
