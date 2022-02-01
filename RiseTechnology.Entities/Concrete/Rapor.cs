@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RiseTechnology.Entities.Concrete
 {
-    public class Rapor : BaseEntity
+    public class RAPOR : BaseEntity
     {
         public DateTime RaporTalepTarih { get; set; }
         public RaporDurum RaporDurumBilgi { get; set; }

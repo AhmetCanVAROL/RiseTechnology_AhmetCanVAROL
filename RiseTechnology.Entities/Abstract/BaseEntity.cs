@@ -18,17 +18,17 @@ namespace RiseTechnology.Entities.Abstract
         [Column(TypeName = "datetime")]
         public DateTime? KayitTarih { get; set; }
 
-        public int? Kaydeden_KullaniciID { get; set; }
+        public int? Ka_KullaniciID { get; set; }
 
         [Column(TypeName = "datetime")]
         public DateTime? DuzeltmeTarih { get; set; }
 
-        public int? Duzenleyen_KullaniciID { get; set; }
+        public int? Du_KullaniciID { get; set; }
 
         [Column(TypeName = "datetime")]
         public DateTime? SilmeTarih { get; set; }
 
-        public int? Silen_KullaniciID { get; set; }
+        public int? Sil_KullaniciID { get; set; }
 
         public bool Durum { get; set; }
     }

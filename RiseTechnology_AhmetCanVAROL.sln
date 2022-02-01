@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseTechnology.API_Gateway", "RiseTechnology.API_Gateway\RiseTechnology.API_Gateway.csproj", "{47AC7714-BAE4-4F62-9FF0-92072F8338EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiseTechnology.API_Gateway", "RiseTechnology.API_Gateway\RiseTechnology.API_Gateway.csproj", "{47AC7714-BAE4-4F62-9FF0-92072F8338EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseTechnology.Entities", "RiseTechnology.Entities\RiseTechnology.Entities.csproj", "{8663FEE7-395A-41FE-823C-54C0B3279309}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiseTechnology.Entities", "RiseTechnology.Entities\RiseTechnology.Entities.csproj", "{8663FEE7-395A-41FE-823C-54C0B3279309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseTechnology.DAL", "RiseTechnology.DAL\RiseTechnology.DAL.csproj", "{0F00ED71-3232-4D98-9E50-CD3B94F08D59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8663FEE7-395A-41FE-823C-54C0B3279309}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8663FEE7-395A-41FE-823C-54C0B3279309}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8663FEE7-395A-41FE-823C-54C0B3279309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F00ED71-3232-4D98-9E50-CD3B94F08D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F00ED71-3232-4D98-9E50-CD3B94F08D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F00ED71-3232-4D98-9E50-CD3B94F08D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F00ED71-3232-4D98-9E50-CD3B94F08D59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

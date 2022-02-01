@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RiseTechnology.Entities.Concrete
 {
-    public class Kisi : BaseEntity
+    public class KISI : BaseEntity
     {
         [MaxLength(70)]
         public string Ad { get; set; }
