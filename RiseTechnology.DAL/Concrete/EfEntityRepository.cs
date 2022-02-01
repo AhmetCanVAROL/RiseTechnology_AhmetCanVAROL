@@ -13,7 +13,7 @@ namespace TPIC.Dal.Concrete
 {
     public class EfEntityRepository<TEntity, TContext> : IEntityRepository<TEntity>
         where TEntity : class
-        where TContext : DbContext
+        where TContext : DbContext,new()
     {
         public Mesajlar<TEntity> Duzelt(TEntity ent, int KulID)
         {

@@ -14,8 +14,8 @@ namespace RiseTechnology.Entities.Patterns
         public RiseTechContext CreateDbContext(string[] args)
         {
             var builder = new DbContextOptionsBuilder<RiseTechContext>();
-            var connectionString = "Server=.;Database=RiseTechnologyDB;Trusted_Connection=True;";
-            builder.UseSqlServer(connectionString);
+            var connectionString = "Host=localhost;Port=5432; User Id=postgres;Password=agartha2020;Database=RiseTechnologyDB;";
+            builder.UseNpgsql(connectionString);
             return new RiseTechContext(builder.Options);
         }
     }
