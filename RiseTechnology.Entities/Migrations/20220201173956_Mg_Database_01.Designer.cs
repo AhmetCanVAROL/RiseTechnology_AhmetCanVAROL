@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using RiseTechnology.Entities.Context;
@@ -9,9 +10,10 @@ using RiseTechnology.Entities.Context;
 namespace RiseTechnology.Entities.Migrations
 {
     [DbContext(typeof(RiseTechContext))]
-    partial class RiseTechContextModelSnapshot : ModelSnapshot
+    [Migration("20220201173956_Mg_Database_01")]
+    partial class Mg_Database_01
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

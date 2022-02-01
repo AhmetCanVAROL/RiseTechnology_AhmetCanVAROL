@@ -10,6 +10,10 @@ namespace RiseTechnology.Entities.Context
 {
     public class RiseTechContext: DbContext
     {
+        public RiseTechContext()
+        {
+
+        }
         public RiseTechContext(DbContextOptions<RiseTechContext> options) : base(options)
         {
 
