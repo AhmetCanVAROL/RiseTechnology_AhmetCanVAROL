@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiseTechnology.API_Gateway", "RiseTechnology.API_Gateway\RiseTechnology.API_Gateway.csproj", "{47AC7714-BAE4-4F62-9FF0-92072F8338EE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47AC7714-BAE4-4F62-9FF0-92072F8338EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47AC7714-BAE4-4F62-9FF0-92072F8338EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47AC7714-BAE4-4F62-9FF0-92072F8338EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47AC7714-BAE4-4F62-9FF0-92072F8338EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
