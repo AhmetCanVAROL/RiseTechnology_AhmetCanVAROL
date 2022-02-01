@@ -15,17 +15,9 @@ namespace RiseTechnology.Entities.Context
 
         }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    base.OnConfiguring(optionsBuilder);
-        //    string ConnStr = "Server=.; Database = RiseTechnologyDB; Trusted_Connection=True;";
-        //    optionsBuilder.UseSqlServer(ConnStr);
-        //}
-
-
-        public DbSet<Kisi> KISILER{ get; set; }
-        public DbSet<Kisi_Iletisim_Bilgi> KISI_ILETISIM_BILGILER { get; set; }
-        public DbSet<Rapor> RAPORLAR{ get; set; }
+        public DbSet<KISI> KISILER{ get; set; }
+        public DbSet<KISI_ILETISIM_BILGI> KISI_ILETISIM_BILGILER { get; set; }
+        public DbSet<RAPOR> RAPORLAR{ get; set; }
 
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RiseTechnology.Entities.Concrete
 {
-    public class Kisi_Iletisim_Bilgi : BaseEntity
+    public class KISI_ILETISIM_BILGI : BaseEntity
     {
         public BilgiTip IletisimBilgiTip { get; set; }
 
